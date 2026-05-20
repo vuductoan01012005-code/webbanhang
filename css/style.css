@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  border: 1px solid #000;
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+}
+.wrapper_chitiet {
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+}
+.hinhanh_sanpham {
+  border: 1px solid #000;
+  float: left;
+  width: 50%;
+}
+.chitiet_sanpham {
+  float: left;
+  width: 59%;
+  margin: 10px;
+}
+input.themgiohang {
+  border: none;
+  background: brown;
+  color: #fff;
+  padding: 12px;
+  font-size: 15px;
+}
+.header {
+  background-image: url("../images/banner.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 180px;
+  border: 1px solid #ff80ff;
+  height: 180px;
+  width: 100%;
+}
+.menu {
+  border: 1px solid #1aff8c;
+  height: 50px;
+  width: 100%;
+  background: #00e6ac;
+}
+ul.list_menu {
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  list-style: none;
+  line-height: 25px;
+  border: 1px solid #000;
+}
+ul.list_menu li {
+  float: left;
+  padding: 5px;
+  margin: 7px;
+}
+
+ul.list_menu li:hover {
+  background: #00ff80;
+  float: left;
+  padding: 5px;
+  margin: 7px;
+}
+ul.list_menu li a {
+  text-decoration: none;
+  text-align: center;
+  color: #090909;
+}
+.main {
+  border: 1px solid #00ff80;
+  height: auto;
+  width: 100%;
+}
+.sidebar {
+  border: 1px solid #000066;
+  height: 390px;
+  width: 20%;
+  margin-top: 5px;
+  margin-left: 5px;
+  float: left;
+}
+ul.list_sidebar {
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  line-height: 25px;
+}
+ul.list_sidebar li {
+  padding: 5px;
+  margin: 7px;
+}
+
+ul.list_sidebar li:hover {
+  background: #3d614f;
+}
+ul.list_sidebar li a {
+  text-decoration: none;
+  text-align: left;
+  color: #090909;
+  display: block;
+}
+.maincontent {
+  height: auto;
+  width: 78%;
+  margin-top: 5px;
+  margin-left: 5px;
+  float: right;
+}
+ul.product_list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+}
+ul.product_list li {
+  width: 18%;
+  border: 1px solid #080808;
+  margin: 5px;
+  float: left;
+  background: #acabab;
+  height: 300px;
+}
+ul.product_list li img {
+  width: 100%;
+  height: 150px;
+}
+
+p.title_product {
+  text-align: center;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+}
+p.price_product {
+  text-align: center;
+  color: #fa0505;
+  font-size: 16px;
+  font-weight: bold;
+}
+ul.product_list li a {
+  text-decoration: none;
+}
+.footer {
+  border: 1px solid #000;
+  height: 150px;
+  width: 100%;
+  background: #00cc99;
+}
+p.footer_copyright {
+  text-align: center;
+  color: #000;
+}
+.clear {
+  clear: both;
+}
