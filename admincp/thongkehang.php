@@ -1,25 +1,5 @@
 <?php
-// Module thống kê doanh thu - Admincp
-// File này được include vào index.php thông qua main.php,
-// giống cách các module khác (dashboard.php, quanlydonhang/lietke.php...) hoạt động.
-//
-// Không tự gọi session_start() và không tự kết nối CSDL riêng,
-// vì index.php đã làm việc đó trước khi include module này:
-//   session_start();
-//   include("config/config.php");   // tạo sẵn biến $conn
-//   include("modules/header.php");
-//   include("modules/menu.php");
-//   include("modules/main.php");    // -> include modules/thongke.php ở đây
-//   include("modules/footer.php");
-//
-// Cấu trúc CSDL sử dụng (webbanhang_db):
-//   donhang        (id, ma_kh, ngay_dat, tong_tien, trang_thai)
-//   chitietdonhang (id, ma_dh, ma_sp, so_luong, don_gia)
-//   sanpham        (id, ten_sp, gia, hinh_anh)
-//   khachhang      (id, ho_ten, email)
 
-// Bảo vệ: nếu ai vô tình mở trực tiếp file này (không qua index.php)
-// thì $conn sẽ không tồn tại, chặn lại cho an toàn.
 if (!isset($conn) || !($conn instanceof mysqli)) {
     die("Vui lòng truy cập qua index.php (không được mở trực tiếp file này).");
 }

@@ -1,16 +1,5 @@
 <?php
-/**
- * ============================================================
- *  TRANG THEM SAN PHAM MOI (ADMINCP)
- * ============================================================
- *  File: admincp/sanpham_them.php
- *
- *  CHUC NANG:
- *   - Form nhap thong tin san pham moi
- *   - Upload anh san pham vao thu muc ../images/
- *   - Luu vao bang sanpham
- * ============================================================
- */
+
 
 session_start();
 
@@ -19,7 +8,6 @@ if (!isset($_SESSION['admin']) && !isset($_SESSION['admin_id'])) {
     // exit();
 }
 
-// ---------- KET NOI DATABASE (sua lai cho dung voi du an cua ban) ----------
 $servername = "localhost";
 $username   = "root";
 $password   = "";

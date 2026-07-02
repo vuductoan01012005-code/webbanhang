@@ -1,19 +1,8 @@
--- Schema CSDL: webbanhang_db
--- Dùng cho project Admincp (login.php, index.php, thongke.php...)
---
--- Cách dùng:
--- 1. Mở phpMyAdmin (hoặc mysql CLI)
--- 2. Tạo database "webbanhang_db" (hoặc import thẳng, script bên dưới đã có CREATE DATABASE)
--- 3. Import file này
-
 CREATE DATABASE IF NOT EXISTS webbanhang_db
     CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 USE webbanhang_db;
 
--- Bảng admin
--- Dùng cho login.php (SELECT * FROM admin WHERE username=... AND password=...)
--- password lưu dưới dạng MD5 (theo đúng logic hiện tại của login.php)
 CREATE TABLE IF NOT EXISTS admin (
     id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(50) NOT NULL UNIQUE,
