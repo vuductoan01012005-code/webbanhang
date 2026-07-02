@@ -1,23 +1,5 @@
 <?php
-/**
- * ============================================================
- *  THEM SAN PHAM VAO GIO HANG
- * ============================================================
- *  File: pages/them_giohang.php
- *
- *  CACH DUNG:
- *   Trong trang chi tiet san pham / danh sach san pham, tao link/form:
- *     <a href="them_giohang.php?id=5&sl=1">Them vao gio</a>
- *   hoac dung form POST voi input name="id" va "sl" (so luong).
- *
- *  GIO HANG duoc luu trong SESSION, dang mang:
- *   $_SESSION['giohang'][ma_san_pham] = so_luong;
- *
- *  LUU Y: file gia dinh bang san pham ten la `sanpham` voi cac cot:
- *   id, ten_sp, gia, hinh_anh. Neu du an ban dat ten khac, sua lai
- *   phan CAU HINH ben duoi.
- * ============================================================
- */
+
 
 session_start();
 
